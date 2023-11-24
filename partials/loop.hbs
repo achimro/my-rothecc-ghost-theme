@@ -13,8 +13,10 @@
 
     <div class="feed-right">
         {{> "icons/star"}}
-        <div class="feed-length">
-            {{reading_time}}
+        <div class="feed-length" {{^is "home,index"}}{{#primary_tag}}style="background-color:{{#if accent_color}}{{accent_color}}{{else}}var(--secondary-text-color){{/if}};"{{/primary_tag}}{{/is}}>
+            {{#primary_tag}}
+                {{name}}
+            {{/primary_tag}}
         </div>
     </div>
 

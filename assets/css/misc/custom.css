@@ -1,0 +1,36 @@
+
+:root {
+    --lighter-gray-color-alt: #f0f0f0;
+}
+.gh-loadmore{
+    background-color: var(--lighter-gray-color);
+    border-radius: 191px;
+    border: none;
+    padding: 10px 17px;
+    line-height: 1;
+    font-weight: 600;
+    color: var(--secondary-text-color);
+    text-transform: none;
+    font-size: 16px;
+}
+.gh-loadmore:hover{
+    background-color: var(--lighter-gray-color-alt);
+    -webkit-transition: background-color 0.2s linear;
+    -ms-transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear;
+}
+
+.feed-title {
+    white-space: wrap;
+}
+
+.feed-length {
+    background-color: var(--secondary-text-color);
+    white-space: nowrap;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: var(--white-color);
+    padding: 4px 8px;
+    border-radius: 16px;
+}
