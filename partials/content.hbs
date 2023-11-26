@@ -72,7 +72,7 @@
         {{/prev_post}}
         </div>
 
-        <div class="single-footer-middle">
+        {{!-- <div class="single-footer-middle">
         {{#if @custom.show_author}}
             <div class="single-footer-top">
                 <h3 class="single-footer-title">Published by:</h3>
@@ -87,13 +87,21 @@
                 </div>
             </div>
         {{/if}}
-        </div>
+        </div> --}}
+        
+            
+        
 
         <div class="single-footer-right">
+            <div class="navigation navigation-by-mail">
+                <a class="navigation-link" href="mailto:?subject={{title}}&body=https://rothe.cc/" aria-label="mail-to">
+                    {{> "icons/email"}} Reply by mail
+                </a>
+            </div>
         {{#next_post}}
             <div class="navigation navigation-next">
                 <a class="navigation-link" href="{{url}}" aria-label="Next post">
-                    {{> "icons/arrow-right"}}
+                    Next {{> "icons/arrow-right"}}
                 </a>
             </div>
         {{/next_post}}
