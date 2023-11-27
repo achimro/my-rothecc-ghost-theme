@@ -3,7 +3,8 @@
         <div class="inner">
             <h2 class="subscribe-cta-title">{{t "Subscribe to Being Useful"}}</h2>
             <form class="subscribe-cta-button gh-form" data-members-form>
-                <input class="subscribe-cta-input gh-form-input" type="email" placeholder="Type your email..." required data-members-email></input>
+                <div class="form-wrapper">
+                    <input class="subscribe-cta-input gh-form-input" type="email" placeholder="Type your email..." required data-members-email></input>
                 <button class="gh-button" type="submit"><span>Subscribe</span>
                     <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24">
                         <g stroke-linecap="round" stroke-width="2" fill="currentColor" stroke="none" stroke-linejoin="round" class="nc-icon-wrapper">
@@ -47,7 +48,15 @@
                         </style>
                     </svg>
                 </button>
+                </div>
+                <div class="success-message">
+                    Great! Check your inbox and click the link.
+                    </div>
+                <div class="error-message">
+                        Sorry, something went wrong. Please try again.
+                </div>
             </form>
+            
         </div>
     </section>
 {{/unless}}
