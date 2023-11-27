@@ -224,7 +224,7 @@
         margin-right: auto;
         padding: 20px 0;
         &>svg{
-            width: 24px;
+            width: 18px;
             fill: var(--color-secondary-text);
         }
         &:hover{
