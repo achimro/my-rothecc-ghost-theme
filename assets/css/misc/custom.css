@@ -52,6 +52,7 @@
         justify-content: center;
         overflow: hidden;
         position: relative;
+        margin-inline: 20px;
     }
     .subscribe-cta-title{
         color: var(--ghost-accent-color);
@@ -65,17 +66,18 @@
         display: inline-flex;
         font-size: 1.7rem;
         justify-content: space-between;
-        padding: 0 0 0 15px;
         position: relative;
         transition: border-color .2s;
         max-width: 400px;
         width: 100%;
         .subscribe-cta-input{
             font-size: 16px;
+            border: none;
         }
-        & > span{
+        & > button{
             background: var(--ghost-accent-color);
             border-radius: 4px;
+            border: none;
             color: #fff;
             display: inline-block;
             font-size: 1.6rem;
@@ -83,9 +85,38 @@
             letter-spacing: -.005em;
             padding: 10px 20px;
             margin-left: 1rem;
+            cursor: pointer;
         }
     }
 }
+
+.gh-form.error {
+    border: 2px solid red;
+}
+
+.gh-form .gh-button svg {
+    display: none;
+    margin-top: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin-right: 45px;
+}
+
+.gh-form .gh-button .checkmark{
+    margin-top: 2px;
+    margin-right: 38px;
+}
+
+.gh-form:is(.loading,.success) .gh-button span {
+    visibility: hidden;
+}
+
+.gh-form.loading .gh-button svg:first-of-type, .gh-form.success .gh-button svg:last-of-type {
+    display: block;
+}
+
 
 
 /* single-footer styling */
@@ -163,7 +194,7 @@
         width: 160px;
         margin-left: auto;
         margin-right: auto;
-        padding: 20px 10px;
+        padding: 20px 0;
         &>svg{
             width: 24px;
             fill: var(--color-secondary-text);
