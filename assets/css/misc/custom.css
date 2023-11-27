@@ -59,38 +59,40 @@
         font-size: 21px;
     }
     .subscribe-cta-button{
-        align-items: center;
-        border: 1px solid var(--ghost-accent-color);
-        border-radius: 6px;
-        color: var(--color-secondary-text);
-        display: inline-flex;
-        font-size: 1.7rem;
-        justify-content: space-between;
-        position: relative;
-        transition: border-color .2s;
-        max-width: 400px;
-        width: 100%;
+        .form-wrapper{
+            align-items: center;
+            border: 1px solid var(--ghost-accent-color);
+            border-radius: 6px;
+            color: var(--color-secondary-text);
+            display: inline-flex;
+            font-size: 1.7rem;
+            justify-content: space-between;
+            position: relative;
+            transition: border-color .2s;
+            max-width: 400px;
+            width: 100%;
+            & > button{
+                background: var(--ghost-accent-color);
+                border-radius: 4px;
+                border: none;
+                color: #fff;
+                display: inline-block;
+                font-size: 1.6rem;
+                font-weight: 600;
+                letter-spacing: -.005em;
+                padding: 10px 20px;
+                cursor: pointer;
+            }
+        }
         .subscribe-cta-input{
             font-size: 16px;
             border: none;
         }
-        & > button{
-            background: var(--ghost-accent-color);
-            border-radius: 4px;
-            border: none;
-            color: #fff;
-            display: inline-block;
-            font-size: 1.6rem;
-            font-weight: 600;
-            letter-spacing: -.005em;
-            padding: 10px 20px;
-            margin-left: 1rem;
-            cursor: pointer;
-        }
+        
     }
 }
 
-.gh-form.error {
+.gh-form.error .form-wrapper{
     border: 2px solid red;
 }
 
@@ -114,6 +116,32 @@
 }
 
 .gh-form.loading .gh-button svg:first-of-type, .gh-form.success .gh-button svg:last-of-type {
+    display: block;
+}
+
+
+.subscribe-cta .success-message,
+.subscribe-cta .error-message {
+  font-size: 1.2rem;
+  display: none;
+  text-align: center;
+    margin-top: 1rem;
+
+}
+
+.subscribe-cta .success-message{
+    color: green;
+}
+
+.subscribe-cta .error-message{
+    color: red;
+}
+
+.gh-form:is(.success) .success-message{
+    display: block;
+}
+
+.gh-form:is(.error) .error-message{
     display: block;
 }
 
