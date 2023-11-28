@@ -36,61 +36,59 @@
 }
 
 /* Subscribe section styling */
-.subscribe-cta{
+.subscribe-cta {
     margin-block: 20px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    .inner{
-        align-items: center;
-        display: flex;
-        flex: none;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        gap: 12px;
-        height: min-content;
-        justify-content: center;
-        overflow: hidden;
-        position: relative;
-        margin-inline: 20px;
-    }
-    .subscribe-cta-title{
-        color: var(--ghost-accent-color);
-        font-size: 21px;
-    }
-    .subscribe-cta-button{
-        .form-wrapper{
-            align-items: center;
-            border: 1px solid var(--ghost-accent-color);
-            border-radius: 6px;
-            color: var(--color-secondary-text);
-            display: inline-flex;
-            font-size: 1.7rem;
-            justify-content: space-between;
-            position: relative;
-            transition: border-color .2s;
-            max-width: 400px;
-            width: 100%;
-            & > button{
-                background: var(--ghost-accent-color);
-                border-radius: 4px;
-                border: none;
-                color: #fff;
-                display: inline-block;
-                font-size: 1.6rem;
-                font-weight: 600;
-                letter-spacing: -.005em;
-                padding: 10px 20px;
-                cursor: pointer;
-            }
-        }
-        .subscribe-cta-input{
-            font-size: 16px;
-            border: none;
-        }
-        
-    }
 }
+.subscribe-cta .inner {
+    align-items: center;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 12px;
+    height: min-content;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    margin-inline: 20px;
+}
+.subscribe-cta .subscribe-cta-title {
+    color: var(--ghost-accent-color);
+    font-size: 21px;
+}
+.subscribe-cta .subscribe-cta-button .form-wrapper {
+    align-items: center;
+    border: 1px solid var(--ghost-accent-color);
+    border-radius: 6px;
+    color: var(--color-secondary-text);
+    display: inline-flex;
+    font-size: 1.7rem;
+    justify-content: space-between;
+    position: relative;
+    transition: border-color 0.2s;
+    max-width: 400px;
+    width: 100%;
+}
+.subscribe-cta .subscribe-cta-button .form-wrapper > button {
+    background: var(--ghost-accent-color);
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.subscribe-cta .subscribe-cta-button .subscribe-cta-input {
+    font-size: 16px;
+    border: none;
+}
+
 
 .gh-form.error .form-wrapper{
     border: 2px solid red;
@@ -148,16 +146,15 @@
 
 
 /* single-footer styling */
-.single-footer{
+.single-footer {
     margin-bottom: 40px;
     justify-content: space-between;
     flex-wrap: wrap;
-    .navigation-link{
-        & > svg{
-            fill: var(--color-secondary-text);
-        }
-    }
 }
+.single-footer .navigation-link > svg {
+    fill: var(--color-secondary-text);
+}
+
 
 .single-footer-left, .single-footer-right{
     flex: auto !important;
@@ -195,41 +192,37 @@
 }
 
 .single-footer-right{
-    gap: 20px;
+    gap: 10px;
     flex-wrap: wrap;
 }
 
-.navigation-by-mail{
-    .navigation-link{
-        &>svg{
-            width: 18px;
-
-        }
-        &:hover{
-            opacity: 1;
-            background: #f2f2f2;
-        }
-    } 
+.navigation-by-mail .navigation-link > svg {
+    width: 18px;
 }
+.navigation-by-mail .navigation-link:hover {
+    opacity: 1;
+    background: #f2f2f2;
+}
+
 
 
 /* New post button styling */
 
-.new-post-btn{
+.new-post-btn {
     margin-top: 40px;
-    .navigation-link{
-        background: var(--white-color);
-        width: 160px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 20px 0;
-        &>svg{
-            width: 24px;
-            fill: var(--color-secondary-text);
-        }
-        &:hover{
-            opacity: 1;
-            background: #f2f2f2;
-        }
-    }
+}
+.new-post-btn .navigation-link {
+    background: var(--white-color);
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0;
+}
+.new-post-btn .navigation-link > svg {
+    width: 18px;
+    fill: var(--color-secondary-text);
+}
+.new-post-btn .navigation-link:hover {
+    opacity: 1;
+    background: #f2f2f2;
 }
